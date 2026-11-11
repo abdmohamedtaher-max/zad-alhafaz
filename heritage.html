@@ -3,74 +3,250 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102e28"><title>زاد | منارات وسيرة وأذكار</title>
 <style>
-:root{font-family:Tahoma,"Segoe UI",sans-serif;color:#f6f1e7;background:#0d231e;--gold:#e7c778;--muted:#b9c7bf;--panel:#173d35;--line:#ffffff20}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0,#294b3a 0,transparent 36%),#0d231e;min-height:100vh}.wrap{max-width:1100px;margin:auto;padding:24px 16px 60px}a{color:var(--gold)}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}h1,h2,h3{font-family:Georgia,"Times New Roman",serif}h1{margin:0;color:var(--gold)}header p,.muted,.note{color:var(--muted);line-height:1.85}.notice{border:1px solid #e7c77866;background:#e7c77812;color:#f6e8c7;border-radius:14px;padding:14px 16px;line-height:1.9;margin:14px 0}nav,.filters{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}button,select,input{font:inherit}nav button,.filters button{border:1px solid var(--line);border-radius:11px;padding:10px 13px;background:#ffffff08;color:#fff;cursor:pointer}nav button.active,.filters button.active{background:var(--gold);color:#16332a}.search{width:100%;max-width:420px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#14342d;color:white;margin:8px 0}.section{display:none}.section.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:13px}.card{background:linear-gradient(145deg,#193f35,#122d27);border:1px solid var(--line);border-radius:16px;padding:17px}.card h3{margin:0 0 7px;color:var(--gold);font-size:1.15rem}.card p{line-height:1.85;margin:8px 0;color:#e8e9df}.ref{border-top:1px solid var(--line);padding-top:10px;margin-top:12px;color:var(--muted);font-size:.87rem}.ref b{color:var(--gold)}.count{color:var(--muted);margin:10px 0}.dhikr{font-size:1.25rem;line-height:2;font-family:Georgia,serif}.repeat{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}.complete{border:1px solid #7ec7a3;border-radius:10px;background:#7ec7a318;color:#e6fff0;padding:9px 13px}.complete.done{background:#26764e}.daily-card{border-right:4px solid var(--gold)}footer{margin-top:24px;color:var(--muted);font-size:.84rem;line-height:1.9}@media(max-width:600px){.wrap{padding:16px 12px}.grid{grid-template-columns:1fr}}
+:root{font-family:Tahoma,"Segoe UI",sans-serif;color:#f6f1e7;background:#0d231e;--gold:#e7c778;--muted:#b9c7bf;--panel:#173d35;--line:#ffffff20;--soft:#ffffff0e;--green:#a1e7bf;--red:#f7b3b3}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0,#294b3a 0,transparent 36%),#0d231e;min-height:100vh}.wrap{max-width:1180px;margin:auto;padding:24px 16px 60px}a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif}h1{margin:0;color:var(--gold)}header p,.muted,.note{color:var(--muted);line-height:1.85}.notice{border:1px solid #e7c77866;background:#e7c77812;color:#f6e8c7;border-radius:14px;padding:14px 16px;line-height:1.9;margin:14px 0}nav,.filters{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}button,select,input{font:inherit}nav button,.filters button{border:1px solid var(--line);border-radius:11px;padding:10px 13px;background:#ffffff08;color:#fff;cursor:pointer}nav button.active,.filters button.active{background:var(--gold);color:#16332a}.section{display:none}.section.active{display:block}.search{width:100%;max-width:420px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#14342d;color:white;margin:8px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:13px}.card{background:linear-gradient(145deg,#193f35,#122d27);border:1px solid var(--line);border-radius:16px;padding:17px}.card h3{margin:0 0 7px;color:var(--gold);font-size:1.15rem}.card p{line-height:1.85;margin:8px 0;color:#e8e9df}.ref{border-top:1px solid var(--line);padding-top:10px;margin-top:12px;color:var(--muted);font-size:.87rem}.ref b{color:var(--gold)}.count{color:var(--muted);margin:10px 0}.dhikr{font-size:1.25rem;line-height:2;font-family:Georgia,serif}.repeat{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}.complete{border:1px solid #7ec7a3;border-radius:10px;background:#7ec7a318;color:#e6fff0;padding:9px 13px}.complete.done{background:#26764e}.daily-card{border-right:4px solid var(--gold)}tagline{display:block;color:var(--muted);font-size:.92rem}.pill{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:6px 10px;border-radius:999px;margin-left:8px;color:var(--gold);font-size:.8rem}footer{margin-top:28px;color:var(--muted);font-size:.84rem;line-height:1.9}@media(max-width:600px){.wrap{padding:16px 12px}.grid{grid-template-columns:1fr}}
 </style>
 </head>
-<body><main class="wrap">
-<header><div><h1>زاد | منارات</h1><p>سيرٌ مختارة، أذكار موثقة، وآيات للتدبر</p></div><div><a href="index.html">التطبيق</a> · <a href="library.html">قصص الأنبياء والفقه</a></div></header>
-<div class="notice"><b>تنبيه بشأن الشمول والتوثيق:</b> لا يمكن جمع «كل» قصص الصالحين منذ بداية التاريخ إلى اليوم أو كتابة سيرهم كاملة في صفحة واحدة، كما أن تفاصيل التاريخ ودرجات الروايات متفاوتة. هذه عينة تعليمية منتقاة وليست موسوعة شاملة. الأذكار أدناه لها إحالات للمصدر؛ راجع اللفظ والعدد في المرجع، ولا تنسب حكمة بشرية إلى النبي ﷺ بلا دليل. لا تتضمن الصفحة فتاوى.</div>
-<nav aria-label="الأقسام"><button class="active" data-tab="companions">الصحابة</button><button data-tab="tabiin">التابعون</button><button data-tab="wives">أمهات المؤمنين</button><button data-tab="adhkar">أذكار الصباح والمساء</button><button data-tab="istighfar">الاستغفار</button><button data-tab="wisdom">آية اليوم</button></nav>
-<section class="section active" id="companions"><h2>من سير الصحابة</h2><p class="muted">نماذج موجزة من أصحاب النبي ﷺ. هذه ليست تراجم كاملة، والإحالات إلى مصادر للسيرة والطبقات.</p><input class="search" data-search="companions" placeholder="ابحث في سير الصحابة"><div class="count" id="count-companions"></div><div class="grid" id="grid-companions"></div></section>
-<section class="section" id="tabiin"><h2>من سير التابعين</h2><p class="muted">الصحابة والتابعون طبقات واسعة، والاختيار هنا أمثلة لا حصرًا.</p><input class="search" data-search="tabiin" placeholder="ابحث في سير التابعين"><div class="count" id="count-tabiin"></div><div class="grid" id="grid-tabiin"></div></section>
-<section class="section" id="wives"><h2>أمهات المؤمنين</h2><p class="muted">أزواج النبي ﷺ أمهات المؤمنين، ولكل واحدة سيرة تستحق دراسة مستقلة. نعرض أسماءً ولمحات موجزة دون ادعاء تقديم ترجمة كاملة.</p><input class="search" data-search="wives" placeholder="ابحث عن أم من أمهات المؤمنين"><div class="count" id="count-wives"></div><div class="grid" id="grid-wives"></div><div class="notice">تختلف كتب السيرة في بعض مسائل العدد والترتيب والتفاصيل، خصوصًا عند إدخال من وقع في شأنها خلاف في وصف الزوجية أو الوفاة قبل الدخول؛ لذلك تجنبنا ادعاء الحصر التاريخي القطعي، وأثبتنا الأسماء المشهورة لأمهات المؤمنين.</div></section>
-<section class="section" id="adhkar"><h2>أذكار الصباح والمساء</h2><p class="muted">يمكنك تعليم الذكر كمكتمل على هذا الجهاز. الأعداد المعروضة بحسب الروايات المشهورة المشار إليها، ويُستحسن الرجوع للكتاب للتحقق من تمام اللفظ.</p><div class="notice">وقت الأذكار وأعدادها فيها تفصيل عند أهل العلم. اعمل بما تتعلمه من مصدر موثوق، ولا تجعل عدّاد الصفحة عبادة مستقلة أو دليلًا على قبول العمل.</div><div class="filters"><button class="active" data-dhikr-filter="all">الكل</button><button data-dhikr-filter="morning">الصباح</button><button data-dhikr-filter="evening">المساء</button></div><div class="grid" id="dhikrGrid"></div></section>
-<section class="section" id="istighfar"><h2>الاستغفار والتوبة</h2><p class="muted">أدعية وأذكار ثابتة أو آيات في ��لاستغفار، مع مراجعها. العداد مساعد شخصي وليس عبادة منصوصًا على عددها.</p><div class="grid" id="istighfarGrid"></div><div class="notice">الاستغفار يجمع الندم على الذنب، والإقلاع عنه، والعزم على عدم العودة، وردّ حقوق الناس إن تعلقت بها مظلمة؛ وتفاصيل التوبة تُسأل فيها جهة علم موثوقة بحسب الحال.</div></section>
-<section class="section" id="wisdom"><h2>آية للتدبر اليوم</h2><p class="muted">بدل نسبة «حكمة دينية» غير موثقة، يعرض هذا الركن آية من القرآن مع مرجعها كل يوم.</p><article class="card daily-card"><h3 id="dailyTitle"></h3><p class="dhikr" id="dailyText"></p><div class="ref" id="dailyRef"></div><button class="complete" id="nextVerse">آية أخرى</button></article></section>
-<footer>المراجع التاريخية المذكورة أدوات للرجوع وليست تو��يقًا تفصيليًا لكل جملة. من أهمها: كتب الحديث المسندة، «سير أعلام النبلاء» للذهبي، «الطبقات الكبرى» لابن سعد، و«الإصابة في تمييز الصحابة» لابن حجر، مع مراعاة اختلاف درجات الروايات. يُراجع النص القرآني في المصحف المعتمد والأذكار في مصادرها الحديثية.</footer>
+<body>
+<main class="wrap">
+<header>
+<div><h1>زاد | منارات</h1><p>سيرٌ مختارة، أذكار موثقة، وموارد للتدبر</p></div>
+<div><a href="index.html">التطبيق</a> · <a href="library.html">المكتبة</a></div>
+</header>
+
+<div class="notice">
+<b>تنبيه توثيقي:</b> لا يمكن جمع كل قصص الصالحين وأخبارهم في صفحة واحدة، ولا يُفترض أن كل ما نعرضه هو حكاية ثابتة بلا تمييز. هذا القسم تعليمٌ موجه، مصحوب بإحالات إلى القرآن والسنة وكتب السيرة، ويُستحسن الرجوع إلى المصادر الأصلية في كل قضية تحتاج إلى تحقيق أو افتاء.
+</div>
+
+<nav aria-label="الأقسام">
+<button class="active" data-tab="companions">الصحابة</button>
+<button data-tab="tabiin">التابعون</button>
+<button data-tab="wives">أمهات المؤمنين</button>
+<button data-tab="adhkar">أذكار الصباح والمساء</button>
+<button data-tab="istighfar">الاستغفار والتوبة</button>
+<button data-tab="wisdom">آية اليوم</button>
+</nav>
+
+<section class="section active" id="companions">
+<h2>من سير الصحابة</h2>
+<p class="muted">هذه قائمة مختارة من أصحاب النبي ﷺ، موضوعة لتكون نقطة بداية للتعرف على سيرهم، مع الإشارة إلى كتب السيرة والحديث لا إلى حصر كامل للصحابة.</p>
+<input class="search" data-search="companions" placeholder="ابحث في أسماء الصحابة أو سيرهم…">
+<div class="count" id="count-companions"></div>
+<div class="grid" id="grid-companions"></div>
+</section>
+
+<section class="section" id="tabiin">
+<h2>من سير التابعين</h2>
+<p class="muted">الطبقة التالية للصحابة اتسعت في العلم، والورع، والفهم، ومنهم من أصبح ركنًا في التفسير والحديث والفقه.</p>
+<input class="search" data-search="tabiin" placeholder="ابحث في أسماء التابعين…">
+<div class="count" id="count-tabiin"></div>
+<div class="grid" id="grid-tabiin"></div>
+</section>
+
+<section class="section" id="wives">
+<h2>أمهات المؤمنين</h2>
+<p class="muted">أزواج النبي ﷺ أو أمهات المؤمنين، لكل واحدة سيرة خاصة، ومن أهم ما تُعرف به فاعلية دورها في نشر الدين والتوجيه، مع الإشارة إلى ما ورد في السيرة والحديث.</p>
+<input class="search" data-search="wives" placeholder="ابحث عن أم من أمهات المؤمنين…">
+<div class="count" id="count-wives"></div>
+<div class="grid" id="grid-wives"></div>
+</section>
+
+<section class="section" id="adhkar">
+<h2>أذكار الصباح والمساء</h2>
+<p class="muted">الأذكار هنا تمثل نماذج ثابتة مع الإشارة إلى الروايات المشهورة، مع تذكير بأن العدد واللفظ قد يختلف في بعض الطرق، فيُرجع إلى أحكام أهل الحديث والكتب المعتمدة.</p>
+<div class="filters">
+<button class="active" data-dhikr-filter="all">الكل</button>
+<button data-dhikr-filter="morning">الصباح</button>
+<button data-dhikr-filter="evening">المساء</button>
+</div>
+<div class="grid" id="dhikrGrid"></div>
+</section>
+
+<section class="section" id="istighfar">
+<h2>الاستغفار والتوبة</h2>
+<p class="muted">الاستغفار واجب ووسيلة من وسائل الرحمة، ومن الذكر المستحب أن يكرر المسلم الاستغفار في اليوم والليلة، مع الإحسان والتوبة الصادقة.</p>
+<div class="grid" id="istighfarGrid"></div>
+</section>
+
+<section class="section" id="wisdom">
+<h2>آية للتدبر اليوم</h2>
+<p class="muted">بديلًا عن الحكم المتداولة غير الموثقة أو المقولة بلا مصدر، هذا القسم يقدّم آية قرآنية منسوبة إلى موضعها في القرآن مع التوجيه للتدبر.</p>
+<article class="card daily-card">
+<h3 id="dailyTitle">آية اليوم</h3>
+<p class="dhikr" id="dailyText"></p>
+<div class="ref" id="dailyRef"></div>
+<button class="complete" id="nextVerse">آية أخرى</button>
+</article>
+</section>
+
+<footer>
+المراجع المذكورة هنا ليست بديلًا عن المراجع العلمية، بل أدوات للرجوع إلى كتب السيرة والحديث والتفسير. من أهمها: صحيح البخاري، صحيح مسلم، سنن أبي داود، سنن الترمذي، مسند أحمد، سير أعلام النبلاء، الطبقات الكبرى، تاريخ الطبري، الإصابة في تمييز الصحابة، السيرة النبوية لابن هشام، وتفسير الطبري. كل ما هنا يقدّم في إطار التعليم لا في صورة فتوى. 
+</footer>
 </main>
+
 <script>
-const data={
-companions:[
-['أبو بكر الصديق رضي الله عنه','من السابقين إلى الإسلام، وصاحب النبي ﷺ في الهجرة، وأول الخلفاء الراشدين.','القرآن: التوبة ٩:٤٠؛ السيرة النبوية لابن هشام؛ الطبقات الكبرى لابن سعد؛ سير أعلام النبلاء للذهبي.'],
-['عمر بن الخطاب رضي الله عنه','ثاني الخلفاء الراشدين، اشتهر بالعدل والحزم، وتناولت كتب التاريخ سيرته وإدارته للدولة.','الطبقات الكبرى لابن سعد؛ تاريخ الخلفاء للسيوطي؛ سير أعلام النبلاء للذهبي.'],
-['عثمان بن عفان رضي الله عنه','ثالث الخلفاء الراشدين، ومن كتّاب الوحي، وفي عهده جُمعت الأمة على المصحف الإمام.','صحيح البخاري، فضائل أصحاب النبي؛ الطبقات الكبرى؛ سير أعلام النبلاء.'],
-['علي بن أبي طالب رضي الله عنه','ابن عم النبي ﷺ وصهره، ورابع الخلفاء الراشدين، عُرف بالعلم والشجاعة.','صحيح البخاري، فضائل أصحاب النبي؛ الطبقات الكبرى؛ الإصابة في تمييز الصحابة لابن حجر.'],
-['خديجة بنت خويلد رضي الله عنها','أول زوجات النبي ﷺ، آزرته في بدء الوحي، وهي من أمهات المؤمنين.','صحيح البخاري، بدء الوحي وفضائل خديجة؛ السيرة النبوية لابن هشام؛ الإصابة لابن حجر.'],
-['بلال بن رباح رضي الله عنه','من السابقين إلى الإسلام، عُذّب في سبيل إيمانه، واشتهر بالأذان.','صحيح البخاري، فضائل أصحاب النبي؛ الطبقات الكبرى؛ سير أعلام النبلاء.'],
-['سلمان الفارسي رضي الله عنه','تذكر كتب السيرة رحلته في طلب الحق، ومشورته بحفر الخندق.','مسند أحمد، حديث سلمان؛ الطبقات الكبرى؛ سير أعلام النبلاء.'],
-['مصعب بن عمير رضي الله عنه','من أوائل من هاجروا إلى المدينة، وبعثه النبي ﷺ ليعلّم أهلها الإسلام.','السيرة النبوية لابن هشام، خبر بعث مصعب إلى المدينة؛ الطبقات الكبرى.'],
-['أبو عبيدة بن الجراح رضي الله عنه','من السابقين، وولاّه النبي ﷺ قيادة بعض السرايا، وورد فضله في أحاديث صحيحة.','صحيح البخاري، فضائل أصحاب النبي؛ سير أعلام النبلاء.'],
-['أسماء بنت أبي بكر رضي الله عنها','من الصحابيات، ارتبط ذكرها بأحداث الهجرة، ورويت أخبارها في كتب الحديث والسيرة.','صحيح البخاري، مناقب الأنصار/الهجرة؛ الطبقات الكبرى؛ الإصابة.']
+const data = {
+companions: [
+['أبو بكر الصديق رضي الله عنه','أول الخلفاء الراشدين، وصاحب النبي ﷺ في الهجرة، وعُرف بالصدق والورع والاهتمام بالمسلمين.','صحيح البخاري؛ صحيح مسلم؛ السيرة النبوية لابن هشام؛ سير أعلام النبلاء للذهبي.'],
+['عمر بن الخطاب رضي الله عنه','سمي بالفاروق؛ اشتهر بعدله وحزمه، وكان له دور كبير في تنظيم الدولة والعدل في الحكم.','الطبقات الكبرى لابن سعد؛ تاريخ الطبري؛ سير أعلام النبلاء.'],
+['عثمان بن عفان رضي الله عنه','ثالث الخلفاء الراشدين، ومن كتّاب الوحي، وهو الذي جُمعت فيها المصاحف في عهد عثمان.','الطبقات الكبرى؛ تاريخ الخلفاء للسيوطي؛ صحيح البخاري.'],
+['علي بن أبي طالب رضي الله عنه','ابن عم النبي ﷺ وصهره، ورابع الخلفاء الراشدين، عُرف بالعلم والشجاعة والورع.','الإصابة في تمييز الصحابة؛ السير والمغازي؛ صحيح البخاري.'],
+['خديجة بنت خويلد رضي الله عنها','أول زوجات النبي ﷺ، وهي أول من آمن به، وساندته في بداية الوحي والضيق.','السيرة النبوية لابن هشام؛ صحيح البخاري؛ مغازي الواقدي.'],
+['بلال بن رباح رضي الله عنه','وكان من أكثر الناس تعذيبًا في سبيل الإسلام، ثم أصبح مؤذّن النبي ﷺ.','سير أعلام النبلاء؛ الطبقات الكبرى؛ صحيح البخاري.'],
+['سلمان الفارسي رضي الله عنه','روى أن النبي ﷺ قال له كلمات تدل على الفهم والرحمة في القيادة، وكان صاحب رأي في حفر الخندق.','مسند أحمد؛ الطبقات الكبرى؛ سير أعلام النبلاء.'],
+['مصعب بن عمير رضي الله عنه','أرسله النبي ﷺ إلى المدينة ليعلّم الناس الإسلام في أول الفتح التعليمي للمجتمع.','السيرة النبوية لابن هشام؛ الطبقات الكبرى.'],
+['أبو عبيدة بن الجراح رضي الله عنه','من السابقين الأولين، وولي في الجهاد شؤون كبيرة، وكان من الأئمة الموثوقين في المعركة.','صحيح البخاري؛ الطبقات الكبرى؛ الإصابة.'],
+['أسماء بنت أبي بكر رضي الله عنها','صحابية مشهورة، وارتبط اسمها بالهجرة والمواقف، ووردت في كتب السيرة والحديث.','الإصابة؛ الطبقات الكبرى؛ السيرة النبوية.'],
+['الزبير بن العوام رضي الله عنه','من السابقين إلى الإسلام، واشتهر بالشجاعة والنهج في الجهاد، وكان من المقربين.','الطبقات الكبرى؛ أسد الغابة؛ الإصابة.'],
+['عبدالله بن مسعود رضي الله عنه','من أوائل من آمن، وكان من أعلم الصحابة، وروى الكثير من الآيات والأحاديث.','صحيح البخاري؛ صحيح مسلم؛ التمهيد لابن عبد البر.']
 ],
-tabiin:[
-['سعيد بن المسيب رحمه الله','من كبار فقهاء المدينة في طبقة التابعين، عُرف بالعناية بالعلم والحديث.','الطبقات الكبرى لابن سعد؛ سير أعلام النبلاء؛ تهذيب الكمال للمزي.'],
-['الحسن البصري ر��مه الله','واعظ وعالم من أعلام التابعين بالبصرة؛ تُدرس أقواله مع التحقق من أسانيد المنقول.','حلية الأولياء لأبي نعيم؛ سير أعلام النبلاء؛ تهذيب التهذيب لابن حجر.'],
-['عروة بن الزبير رحمه الله','فقيه ومحدّث من فقهاء المدينة، ومن رواة الحديث، وأحد أبناء أسماء بنت أبي بكر.','الطبقات الكبرى لابن سعد؛ سير أعلام النبلاء؛ تهذيب الكمال.'],
-['محمد بن سيرين رحمه الله','تابعي بصري، اشتهر بالفقه والحديث والورع، وتحتاج الأخبار المنقولة عنه إلى فحص الأسانيد.','حلية الأولياء؛ سير أعلام النبلاء؛ تهذيب الكمال.'],
-['عمر بن عبد العزيز رحمه الله','خليفة أموي عُرف في كتب التاريخ بالعدل والإصلاح، ويُعدّه عدد من العلماء من الخلفاء الراشدين من جهة سيرته.','سيرة عمر بن عبد العزيز لابن عبد الحكم؛ تاريخ الطبري؛ سير أعلام النبلاء.'],
-['مجاهد بن جبر رحمه الله','من كبار تلامذة ابن عباس في التفسير؛ تُراجع أقواله ضمن كتب التفسير المسندة.','تفسير الطبري؛ الطبقات الكبرى؛ سير أعلام النبلاء.']
+tabiin: [
+['سعيد بن المسيب رحمه الله','من كبار فقهاء المدينة، عُرف بالهدية والورع، وذاع في العلم والثقافة الدينية.','الطبقات الكبرى؛ سير أعلام النبلاء؛ تهذيب الكمال.'],
+['الحسن البصري رحمه الله','من أئمة التابعين، وكان ورعًا وموعظةً، وأثره في العلم واسع في البصرة.','حلية الأولياء؛ سير أعلام النبلاء؛ طبقات ابن سعد.'],
+['عروة بن الزبير رحمه الله','فقيه المدينة، ومحدثها، ورجل من بيت علم وقصص سيرة واضحة في كتب التاريخ.','الطبقات الكبرى؛ سير أعلام النبلاء؛ تهذيب الكمال.'],
+['محمد بن سيرين رحمه الله','من أعلام البصرة في الحديث والفقه، وكان يتأثر بالورع والرحمة في النصح.','حلية الأولياء؛ سير أعلام النبلاء؛ تهذيب الكمال.'],
+['مجاهد بن جبر رحمه الله','تفسيره وفهمه للقرآن مشهور، وساعد على ترسيخ تفسير أهل المدينة والبصرة.','تفسير الطبري؛ سير أعلام النبلاء؛ الطبقات الكبرى.'],
+['عمر بن عبد العزيز رحمه الله','خليفة عدل في عصره، غلبت سيرته رفع القسط والرحمة والعدل في الحكم.','سيرة عمر بن عبد العزيز؛ تاريخ الطبري؛ سير أعلام النبلاء.'],
+['أبو قلابة الجرمي رحمه الله','إمام في العلم والورع، وله أثر في الحث على تقوى الله ومراقبة النفس.','سير أعلام النبلاء؛ الطبقات الكبرى؛ حلية الأولياء.'],
+['الربيع بن خثيم رحمه الله','تذكره كتب التفسير والسيرة كأحد العلماء المستقيمين وذوي الخشوع في العبادة.','الطبقات الكبرى؛ سير أعلام النبلاء.'],
+['عبدالله بن شقيق رحمه الله','من العلماء المشهورين في العلم والرحمة، له أثر في التوجيه العام للمسلمين.','سير أعلام النبلاء؛ طبقات ابن سعد.'],
+['أبو العالية الرياحي رحمه الله','من كبار المفسرين الذين جمعوا بين التدبر والورع، وكان له أثر في التفسير.','تفسير الطبري؛ سير أعلام النبلاء؛ طبقات ابن سعد.']
 ],
-wives:[
-['خديجة بنت خويلد رضي الله عنها','أول أمهات المؤمنين، وأول من آمن بالنبي ﷺ، وساندته في بداية الدعوة.','صحيح البخاري، بدء الوحي وفضائل خديجة؛ صحيح مسلم، فضائل الصحابة.'],
-['سودة بنت زمعة رضي الله عنها','من أمهات المؤمنين، تزوجها النبي ﷺ بعد وفاة خديجة.','الطبقات الكبرى لابن سعد؛ الإصابة لابن حجر؛ كتب السيرة المعتمدة.'],
-['عائشة بنت أبي بكر رضي الله عنها','أم المؤمنين وعالمة راوية، نقل عنها الصحابة والتابعون علمًا كثيرًا.','صحيح البخاري وصحيح مسلم، فضائل عائشة؛ الطبقات الكبرى؛ الإصابة.'],
-['حفصة بنت عمر رضي الله عنها','أم المؤمنين، وحُفظ عندها المصحف الذي جُمع في عهد أبي بكر ثم نُسخت منه المصاحف في عهد عثمان.','صحيح البخاري، فضائل القرآن وخبر جمع المصحف؛ الطبقات الكبرى.'],
-['زينب بنت خزيمة رضي الله عنها','أم المؤمنين، لُقبت بأم المساكين في كتب السيرة، وتوفيت بعد زواجها بالنبي ﷺ بمدة قصيرة.','الطبقات الكبرى لابن سعد؛ الإصابة لابن حجر.'],
-['أم سلمة هند بنت أبي أمية رضي الله عنها','أم المؤمنين، ومن المهاجرات، ورويت عنها أحاديث، ولها مواقف مشهورة في السيرة.','صحيح البخاري وصحيح مسلم؛ السيرة النبوية؛ الطبقات الكبرى.'],
-['زينب بنت جحش رضي الله عنها','أم المؤمنين، ورد ذكر زواجها في القرآن، وعُرفت بالصدقة والعمل.','الأحزاب ٣٣:٣٧؛ صحيح البخاري وصحيح مسلم، فضائل زينب.'],
-['جويرية بنت الحارث رضي الله عنها','أم المؤمنين، وردت أخبار زواجها وبركتها في كتب الحديث والسيرة.','صحيح البخاري، العتق؛ صحيح مسلم، فضائل الصحابة؛ الطبقات الكبرى.'],
-['أم حبيبة رملة بنت أبي سفيان رضي الله عنها','أم المؤمنين، هاجرت إلى الحبشة، ثم تزوجها النبي ﷺ.','النساء ٤:٢٤ من جهة الأحكام العامة؛ صحيح مسلم، فضائل الصحابة؛ الطبقات الكبرى.'],
-['صفية بنت حيي رضي الله عنها','أم المؤمنين، من ذرية هارون عليه السلام، وتذكر كتب الحديث والسيرة خبر زواجها بالنبي ﷺ.','صحيح البخاري وصحيح مسلم، المغازي/النكاح؛ الطبقات الكبرى.'],
-['ميمونة بنت الحارث رضي الله عنها','آخر من تزوج النبي ﷺ من أمهات المؤمنين بحسب المشهور في كتب السيرة.','صحيح البخاري وصحيح مسلم، الحج/النكاح؛ الطبقات الكبرى؛ الإصابة.']
-]};
-const dhikr=[
-{title:'آية الكرسي',text:'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ… (تُقرأ الآية كاملة من المصحف)',count:'مرة صباحًا ومساءً في أذكار مشهورة',when:'both',ref:'القرآن الكريم، البقرة ٢:٢٥٥؛ ورد فضل قراءتها في أذكار اليوم والليلة بأحاديث، منها روايات أبي داود والنسائي؛ راجع تخريج أهل الحديث.'},
-{title:'الإخلاص والمعوذتان',text:'سورة الإخلاص، وسورة الفلق، وسورة الناس؛ تُقرأ السور كاملة.',count:'ثلاث مرات صباحًا ومساءً',when:'both',ref:'سنن أبي داود ٥٠٨٢؛ جامع الترمذي ٣٥٧٥ (تُراجع أحكام المحدثين على الروايات والطرق).'},
-{title:'رضيت بالله ربًا',text:'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا.',count:'ثلاث مرات صباحًا ومساءً في رواية',when:'both',ref:'سنن أبي داود ٥٠٧٢؛ جامع الترمذي ٣٣٨٩. تحقق من اللفظ والدرجة في طبعة محققة.'},
-{title:'بسم الله الذي لا يضر',text:'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.',count:'ثلاث مرات صباحًا ومساءً',when:'both',ref:'سنن أبي داود ٥٠٨٨؛ جامع الترمذي ٣٣٨٨. يُراجع التخريج واللفظ في مصدر موثوق.'},
-{title:'أصبحنا وأصبح الملك لله',text:'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ… (للمساء: أمسينا وأمسى الملك لله).',count:'مرة صباحًا ومساءً',when:'both',ref:'صحيح مسلم ٢٧٢٣، من حديث عبد الله بن مسعود رضي الله عنه؛ راجع تمام الدعاء في المصدر.'},
-{title:'سيد الاستغفار',text:'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ… (يُستكمل النص من المصدر).',count:'صباحًا ومساءً',when:'both',ref:'صحيح البخاري ٦٣٠٦. نُبّه إلى أول الدعاء اختصارًا؛ يُرجع للنص الكامل في صحيح البخاري.'}
+wives: [
+['خديجة بنت خويلد رضي الله عنها','أول أمهات المؤمنين، وآخر ما يقال في سيرة دخولها أسفلها لقب كريمة وأول من آمن بالنبي ﷺ.','السيرة النبوية لابن هشام؛ صحيح البخاري؛ الإصابة.'],
+['سودة بنت زمعة رضي الله عنها','أم المؤمنين؛ تزوجها النبي ﷺ بعد خديجة، وكانت من المهاجرات، وعُرفت بالسكينة والورع.','السيرة النبوية؛ الطبقات الكبرى؛ الإصابة.'],
+['عائشة بنت أبي بكر رضي الله عنها','أم المؤمنين، وأحد أعلام الحديث في الأمة، وبلغ علمها في الفقه والقراءة والحديث.','صحيح البخاري؛ صحيح مسلم؛ سير أعلام النبلاء.'],
+['حفصة بنت عمر رضي الله عنها','أم المؤمنين، وكانت عندها نسخة من المصحف حافظت في عهدها، وقد نهجت في دورها في حفظ الدين.','الطبقات الكبرى؛ السيرة النبوية؛ تفسير ابن كثير.'],
+['زينب بنت خزيمة رضي الله عنها','أم المؤمنين، لُقبت بأم المساكين، وتزوجها النبي ﷺ في سنةٍ مشهورة من السيرة.','الطبقات الكبرى؛ الإصابة؛ السيرة النبوية.'],
+['أم سلمة هند بنت أبي أمية رضي الله عنها','من أمهات المؤمنين، وكانت مهاجرة، وبرزت في العلم والخبرة على أثرها في السنن والسيرة.','صحيح البخاري؛ صحيح مسلم؛ الطبقات الكبرى.'],
+['زينب بنت جحش رضي الله عنها','أم المؤمنين، ورد ذكر زواجها في القرآن، وكانت من النساء اللاتي اختبرن في الدينيّة والمشقة.','الأحزاب ٣٣:٣٧؛ صحيح البخاري؛ صحيح مسلم.'],
+['جويرية بنت الحارث رضي الله عنها','أم المؤمنين، تزوجها النبي ﷺ، واسمها في كتب السيرة في قصة الإفك في بعض التواريخ.','السيرة النبوية؛ الطبقات الكبرى؛ صحيح البخاري.'],
+['أم حبيبة رملة بنت أبي سفيان رضي الله عنها','أم المؤمنين، هاجرت إلى الحبشة، ثم تزوجها النبي ﷺ، وهبط عليها وصف المشقة والرحمة.','الطبقات الكبرى؛ السيرة النبوية؛ صحيح ��سلم.'],
+['صفية بنت حيي رضي الله عنها','أم المؤمنين، كانت من ذرية بني إسرائيل، وكان لها دور في السيرة، وتذكر في كتب الحديث والسير.','السيرة النبوية؛ صحيح البخاري؛ صحيح مسلم.'],
+['ميمونة بنت الحارث رضي الله عنها','آخر من تزوجها النبي ﷺ من أمهات المؤمنين بحسب المشهور في كتب السيرة.','السيرة النبوية؛ الطبقات الكبرى؛ صحيح البخاري.']
+]
+};
+
+const dhikr = [
+{title:'آية الكرسي',text:'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ…',count:'مرة صباحًا ومساءً',when:'both',ref:'البقرة ٢:٢٥٥. ورد فضل قراءتها في الأذكار والسنن؛ راجع تخريجها في مصنفات أهل الحديث.'},
+{title:'الإخلاص والمعوذتان',text:'قُلْ هُوَ اللَّهُ أَحَدٌ… • قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ… • قُلْ أَعُوذُ بِرَبِّ النَّاسِ…',count:'ثلاث مرات صباحًا ومساءً',when:'both',ref:'أبو داود، والترمذي، وغيرها. يُراجع لفظ الدعاء ودرجة الرواية في المصادر الحديثية المحققة.'},
+{title:'أذكار الاستيقاظ',text:'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا…',count:'مرة بعد الاستيقاظ',when:'morning',ref:'مستخرجة من الأذكار الملحقة بأحاديث موصولة. يُراجع نصها في كتب الأذكار المعتمدة.'},
+{title:'أذكار النوم',text:'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي…',count:'قبل النوم',when:'evening',ref:'صحيح البخاري ٦٣١١، وصحيح مسلم ٢٧٠٨، مع مراجعة نص الدعاء في المصنفات المعتمدة.'},
+{title:'تلاوة القرآن',text:'رَبَّنَا لاَ تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا…',count:'مرة بعد الفجر أو المساء',when:'both',ref:'البقرة ٢:٢٨٥؛ وتعتبر تلاوة القرآن من أهم أذكار المسلم. راجع مواضع الآية في السياق.'},
+{title:'رضيت بالله ربًا',text:'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا.',count:'ثلاث مرات',when:'both',ref:'سنن أبي داود، والترمذي، وغيرها. يُرجع إلى التخريج الصحيح وطبعاته الموثقة.'}
 ];
-const istighfar=[
-['سيد الاستغفار','اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ…','صحيح البخاري ٦٣٠٦. هذا اقتباس مبتور للتعريف؛ اقرأ النص كاملًا من المصدر.'],
-['رب اغفر لي وتب علي','رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ.','سنن أبي داود ١٥١٦؛ جامع الترمذي ٣٤٣٤، عن ابن عمر رضي الله عنهما. راجع الحكم على الإسناد في مصدر حديثي محقق.'],
-['دعاء آدم وحواء','رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ.','القرآن الكريم، سورة الأعراف ٧:٢٣.'],
-['الاستغفار والتوبة','وَأَنِ اسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ.','القرآن الكريم، سورة هود ١١:٣؛ اقرأ الآية في سياقها.']
+
+const istighfar = [
+['سيد الاستغفار','اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ…','صحيح البخاري ٦٣٠٦. النص الكامل يُقرأ من الصحيح، وهذا مجرد إشارة مختصرة.' ],
+['استغفار دائم','أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ.','إشارة إلى الحديث في السنن المعتمدة، ويُرجع إلى المعلقات والتخريج إذا كان المقصود التطبيق الدقيق.'],
+['دعاء التوبة','رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ.','القرآن: الأعراف ٧:٢٣.'],
+['دعاء التضرع','اللَّهُمَّ اغْفِرْ لِي ذَنْبِي وَوَسِّعْ لِي فِي دَارِي…','أدعية متنوعة في الأذكار والسنن؛ يُكتب النص الكامل في كتب الأذكار ولا تُجمع في سطر واحد بلا مصدر.']
 ];
-const verses=[['التيسير','فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا','الشرح ٩٤:٥–٦'],['التوكل','وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ','الطلاق ٦٥:٣'],['الطمأنينة','أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ','الرعد ١٣:٢٨'],['الأمل','لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ','الزمر ٣٩:٥٣'],['الشكر','لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ','إبراهيم ١٤:٧'],['الإحسان','إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ','البقرة ٢:١٩٥']];
-function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function renderCollection(key){const q=document.querySelector(`[data-search="${key}"]`).value.trim().toLowerCase(),items=data[key].filter(x=>x.join(' ').toLowerCase().includes(q));document.querySelector('#count-'+key).textContent=`${items.length} من ${data[key].length}`;document.querySelector('#grid-'+key).innerHTML=items.map(x=>`<article class="card"><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p><div class="ref"><b>مراجع للرجوع:</b> ${esc(x[2])}</div></article>`).join('')||'<p class="muted">لا توجد نتائج.</p>'}
-for(const key of Object.keys(data)){document.querySelector(`[data-search="${key}"]`).addEventListener('input',()=>renderCollection(key));renderCollection(key)}
-let dhikrFilter='all';const dhikrState=JSON.parse(localStorage.getItem('zad-dhikr-state')||'{}');function renderDhikr(){const items=dhikr.filter(x=>dhikrFilter==='all'||x.when===dhikrFilter);document.querySelector('#dhikrGrid').innerHTML=items.map((x,i)=>{const id='d'+dhikr.indexOf(x),done=!!dhikrState[id];return `<article class="card"><h3>${esc(x.title)}</h3><p class="dhikr">${esc(x.text)}</p><p>${esc(x.count)}</p><div class="ref"><b>المصدر:</b> ${esc(x.ref)}</div><div class="repeat"><span class="muted">متابعة شخصية</span><button class="complete ${done?'done':''}" data-done="${id}">${done?'تم الإنجاز ✓':'علّم كمكتمل'}</button></div></article>`}).join('');document.querySelectorAll('[data-done]').forEach(b=>b.onclick=()=>{const id=b.dataset.done;dhikrState[id]=!dhikrState[id];localStorage.setItem('zad-dhikr-state',JSON.stringify(dhikrState));renderDhikr()})}
-document.querySelectorAll('[data-dhikr-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-dhikr-filter]').forEach(x=>x.classList.toggle('active',x===b));dhikrFilter=b.dataset.dhikrFilter;renderDhikr()});document.querySelector('#istighfarGrid').innerHTML=istighfar.map(x=>`<article class="card"><h3>${esc(x[0])}</h3><p class="dhikr">${esc(x[1])}</p><div class="ref"><b>المصدر:</b> ${esc(x[2])}</div></article>`).join('');let verseIndex=Math.floor(Date.now()/86400000)%verses.length;function renderVerse(){const x=verses[verseIndex%verses.length];document.querySelector('#dailyTitle').textContent=x[0];document.querySelector('#dailyText').textContent='﴿'+x[1]+'﴾';document.querySelector('#dailyRef').textContent='المرجع: سورة '+x[2]}document.querySelector('#nextVerse').onclick=()=>{verseIndex=(verseIndex+1)%verses.length;renderVerse()};renderVerse();renderDhikr();document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===b.dataset.tab))});
-</script></body></html>
+
+const verses = [
+['التيسير','فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا','الشرح ٩٤:٥–٦'],
+['التوكل','وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ','الطلاق ٦٥:٣'],
+['الطمأنينة','أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ','الرعد ١٣:٢٨'],
+['الأمل','لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ','الزمر ٣٩:٥٣'],
+['الشكر','لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ','إبراهيم ١٤:٧'],
+['العمل الصالح','إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ','البقرة ٢:١٩٥']
+];
+
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function renderCollection(key){
+  const q = document.querySelector(`[data-search="${key}"]`).value.trim().toLowerCase();
+  const items = data[key].filter(x => x.join(' ').toLowerCase().includes(q));
+  document.querySelector('#count-' + key).textContent = `${items.length} من ${data[key].length}`;
+  const grid = document.querySelector('#grid-' + key);
+  grid.innerHTML = items.length ? items.map(x => `
+    <article class="card">
+      <h3>${esc(x[0])}</h3>
+      <p>${esc(x[1])}</p>
+      <div class="ref"><b>المراجع:</b> ${esc(x[2])}</div>
+    </article>
+  `).join('') : '<p class="muted">لا توجد نتائج.</p>';
+}
+
+Object.keys(data).forEach(key => {
+  const inp = document.querySelector(`[data-search="${key}"]`);
+  if (inp) {
+    inp.addEventListener('input', () => renderCollection(key));
+    renderCollection(key);
+  }
+});
+
+let dhikrFilter = 'all';
+const dhikrState = JSON.parse(localStorage.getItem('zad-dhikr-state') || '{}');
+
+function renderDhikr(){
+  const items = dhikr.filter(x => dhikrFilter === 'all' || x.when === dhikrFilter || x.when === 'both');
+  const grid = document.querySelector('#dhikrGrid');
+  grid.innerHTML = items.map((x, i) => {
+    const id = 'd' + i;
+    const done = !!dhikrState[id];
+    return `
+      <article class="card">
+        <h3>${esc(x.title)}</h3>
+        <p class="dhikr">${esc(x.text)}</p>
+        <p>${esc(x.count)}</p>
+        <div class="ref"><b>المصدر:</b> ${esc(x.ref)}</div>
+        <div class="repeat">
+          <span class="muted">علامة متابعة</span>
+          <button class="complete ${done ? 'done' : ''}" data-done="${id}">${done ? 'تم الإنجاز ✓' : 'علّم كمكتمل'}</button>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  document.querySelectorAll('[data-done]').forEach(btn => {
+    btn.onclick = () => {
+      const id = btn.dataset.done;
+      dhikrState[id] = !dhikrState[id];
+      localStorage.setItem('zad-dhikr-state', JSON.stringify(dhikrState));
+      renderDhikr();
+    };
+  });
+}
+
+document.querySelectorAll('[data-dhikr-filter]').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll('[data-dhikr-filter]').forEach(x => x.classList.toggle('active', x === btn));
+    dhikrFilter = btn.dataset.dhikrFilter;
+    renderDhikr();
+  };
+});
+
+const istighfarGrid = document.querySelector('#istighfarGrid');
+istighfarGrid.innerHTML = istighfar.map(([title, text, ref]) => `
+  <article class="card">
+    <h3>${esc(title)}</h3>
+    <p class="dhikr">${esc(text)}</p>
+    <div class="ref"><b>المصدر:</b> ${esc(ref)}</div>
+  </article>
+`).join('');
+
+let verseIndex = Math.floor(Date.now() / 86400000) % verses.length;
+function renderVerse(){
+  const x = verses[verseIndex % verses.length];
+  document.querySelector('#dailyTitle').textContent = x[0];
+  document.querySelector('#dailyText').textContent = '﴿' + x[1] + '﴾';
+  document.querySelector('#dailyRef').textContent = 'المرجع: ' + x[2];
+}
+
+document.querySelector('#nextVerse').onclick = () => {
+  verseIndex = (verseIndex + 1) % verses.length;
+  renderVerse();
+};
+
+renderVerse();
+renderDhikr();
+
+document.querySelectorAll('[data-tab]').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll('[data-tab]').forEach(x => x.classList.toggle('active', x === btn));
+    document.querySelectorAll('.section').forEach(section => section.classList.toggle('active', section.id === btn.dataset.tab));
+  };
+});
+</script>
+</body>
+</html>
